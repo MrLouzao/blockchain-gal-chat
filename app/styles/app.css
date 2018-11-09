@@ -1,0 +1,36 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  padding: 2em;
+  background: #151c1f;
+}
+
+#container-content {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#messages {
+  min-height: 500px;
+  min-width: 500px;
+  border: solid 1px #bdbdbd;
+  border-radius: 5px;
+  padding: .5em;
+}
+
+
+input {
+  width: 500px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  padding: 1px;
+}

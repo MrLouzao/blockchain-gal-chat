@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain Gal Chat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="./app.js"></script>
+</head>
+<body>
+
+<div id="container">
+  
+  <header>
+    <img src="https://blockchain.gal/wp-content/uploads/2018/10/logo3.png" alt="blockchain_gal_logo" style="height: 21px;">
+  </header>
+  
+
+  <div id="container-content">
+
+    <div id="actions">
+        <p>
+          <input type="button" value="Crear chat" onclick="App.createContract()">
+        </p>
+        <p>
+          <input type="button" value="Enlazar con chat" onclick="App.joinContract()">
+        </p>
+    </div>
+
+
+    <div id="chat">
+      <div id="messages"></div>
+      <div id="msg-field" style="padding: 1em;">
+          <input id="msgToWrite" style="width: 70%" type="text" maxlength="30">
+          <input type="button" style="width: 20%" value="Enviar" onclick="App.sendMessage()">
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+
+</div>
+
+</body>
+</html>
