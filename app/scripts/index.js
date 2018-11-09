@@ -47,6 +47,7 @@ const App = {
       accounts = accs
       account = accounts[0]
       console.log("Current account: " + account);
+      document.getElementById("my-address").innerText = account;
     })
 
   },
