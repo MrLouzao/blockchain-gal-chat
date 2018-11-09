@@ -24,7 +24,10 @@ Acceder á seguinte páxina:
 
 `http://localhost:8080`
 
+## Dirección do contrato de probas actual:
 
+* Network: Ropsten
+* Dirección: 0xa7f78a25d811bf407d9156249c0fdb12e6dc978b
 
 
 # Github
