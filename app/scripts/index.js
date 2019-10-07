@@ -7,7 +7,7 @@ import { default as contract } from 'truffle-contract'
 import $ from "jquery";
 
 // Import our contract artifacts and turn them into usable abstractions.
-import blockchainGalChatArtifact from '../../build/contracts/blockchainGalChat.json';
+import blockchainGalChatArtifact from '../../build/contracts/BlockchainGalChat.json';
 
 // MetaCoin is our usable abstraction, which we'll use through the code below.
 const BlockchainChat = contract(blockchainGalChatArtifact)
@@ -24,7 +24,7 @@ var msgWrittenEvent;
 
 const App = {
   start: function () {
-    const self = this
+    const self = this;
 
     // Bootstrap the MetaCoin abstraction for Use.
     BlockchainChat.setProvider(web3.currentProvider)
@@ -168,5 +168,6 @@ window.addEventListener('load', function () {
     window.web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/6f55bd56d01d4c4e92ea847a5fbd5d3a'))
   }
 
-  App.start()
+  window.ethereum.enable();
+  App.start();
 })
